@@ -3,7 +3,7 @@
 
 import random
 
-print("Welcome to the Randomization application")
+print("-------------Welcome to the Randomization application--------------")
 
 roll_dice1 = print(random.randint(1, 6))
 
@@ -58,7 +58,6 @@ else:
 print("------------------------Food List------------------------")
 fav_food_list = ["Rice", "Pundo Yam","spagetti", "Fried Rice", "Egg and plaintain"]
 
-fav_food_list.append(fav_food_list)
 print(f"Your fav foodlist : {fav_food_list}")
 
 fav_food_list.insert(1, "beans")
@@ -67,7 +66,7 @@ fav_food_list.remove("Rice")
 
 fav_food_list.reverse()
 
-# fav_food_list.sort()
+fav_food_list.sort()
 
 print(fav_food_list)
 
@@ -89,6 +88,33 @@ friend_list.append(input("Friend Name: "))
 print(friend_list)  # Optional: To check the added name
 print(f"The winner is {random.choice(friend_list)}") # Optional:
 
+# Part 3: Combined Task (40 points) 
+# Task 6: Random Team Generator (40 points) 
+print("------------------Team Generator----------------")
+
+ask_users_list = [] 
+
+ask_users_list.append(input("Enter a name: "))
+
+ask_users_list.append(input("Enter a name: "))
+
+ask_users_list.append(input("Enter a name: "))
+
+ask_users_list.append(input("Enter a name: "))
+
+ask_users_list.append(input("Enter a name: "))
+
+ask_users_list.append(input("Enter a name: "))
+
+random.shuffle(ask_users_list)
+
+print("Team 1:")
+
+print(ask_users_list[:3])
+
+print("Team 2:")
+
+print(ask_users_list[3:])
 
 
 
