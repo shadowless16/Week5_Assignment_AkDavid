@@ -29,4 +29,29 @@ print("Lunch:", random.choice(lunch_list))
 
 print("Dinner:", random.choice(dinner_list))
 
+# Task 3: Rock, Paper, Scissors Game (10 points) 
+
+print("Welcome to the Rock, Paper, Scissors game!")
+
+choice = ["rock","paper", "scissors"]
+
+user_choice = input("Enter your choice Rock, Paper or Scissors: ").lower()
+
+computer_choice = random.choice(choice)
+
+print(f"You choose: {user_choice} and computer choose: {computer_choice}")
+
+if user_choice == computer_choice:
+    print("It's a tie!")
+elif user_choice == "rock" and computer_choice == "scissors":
+    print("You won!")
+elif user_choice == "scissors" and computer_choice == "paper":
+    print("You win!")
+elif user_choice == "paper" and computer_choice == "rock":
+    print("You win!")
+else:
+    print("You Lost!")
+
+
+
   
