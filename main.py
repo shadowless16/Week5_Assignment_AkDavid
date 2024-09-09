@@ -1,6 +1,6 @@
 # Part 1: Randomization (30 points) 
 # Task 1: Dice Roller Simulation (10 points) 
-# ● Write a Python program that simulates rolling two six-sided dice. ● The program should generate two random integers between 1 and 6. ● Add the results together and print the total. 
+
 import random
 
 print("Welcome to the Randomization application")
@@ -13,3 +13,20 @@ print("Total:", random.randint(1, 6) + random.randint(1, 6))
 
 # print("Rolling dice:",  roll_dice1 + roll_dice2)
 
+# Task 2: Random Meal Selector (10 points) 
+
+print("Welcome to the random meal selector program")
+
+breakfast_list = ["Bread and Tea", "Corn flakes", "Golden More"]
+
+lunch_list = ["Rice and beans", "Chicken and rice", "Yam and Egg"]
+
+dinner_list = ["Eba and okro soup", "Poundo yam and stew", "Custard"]
+
+print("Breakfast:", random.choice(breakfast_list))
+
+print("Lunch:", random.choice(lunch_list))
+
+print("Dinner:", random.choice(dinner_list))
+
+  
