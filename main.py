@@ -15,7 +15,7 @@ print("Total:", random.randint(1, 6) + random.randint(1, 6))
 
 # Task 2: Random Meal Selector (10 points) 
 
-print("Welcome to the random meal selector program")
+print("----------------Welcome to the random meal selector program---------------- \n")
 
 breakfast_list = ["Bread and Tea", "Corn flakes", "Golden More"]
 
@@ -31,9 +31,9 @@ print("Dinner:", random.choice(dinner_list))
 
 # Task 3: Rock, Paper, Scissors Game (10 points) 
 
-print("Welcome to the Rock, Paper, Scissors game!")
+print("----------------Welcome to the Rock, Paper, Scissors game!----------------")
 
-choice = ["rock","paper", "scissors"]
+choice = ["rock","paper","scissors"]
 
 user_choice = input("Enter your choice Rock, Paper or Scissors: ").lower()
 
@@ -52,6 +52,21 @@ elif user_choice == "paper" and computer_choice == "rock":
 else:
     print("You Lost!")
 
+# Part 2: Lists (30 points) 
+# Task 4: Favorite Foods List (15 points) 
 
+print("------------------------Food List------------------------")
+fav_food_list = ["Rice", "Pundo Yam","spagetti", "Fried Rice", "Egg and plaintain"]
 
-  
+fav_food_list.append(fav_food_list)
+print(f"Your fav foodlist : {fav_food_list}")
+
+fav_food_list.insert(1, "beans")
+
+fav_food_list.remove("Rice")
+
+fav_food_list.reverse()
+
+# fav_food_list.sort()
+
+print(fav_food_list)
