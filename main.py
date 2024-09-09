@@ -70,3 +70,24 @@ fav_food_list.reverse()
 # fav_food_list.sort()
 
 print(fav_food_list)
+
+# Task 5: Random Name Selector (15 points) 
+
+print("-----------------------Random Name Selector-----------------------------")
+
+friend_list = []
+
+# Append the friend's name to the list
+friend_list.append(input("Friend Name: "))
+# friend_list.insert(0, input("Friend Name: "))
+friend_list.append(input("Friend Name: "))
+friend_list.append(input("Friend Name: "))
+friend_list.append(input("Friend Name: "))
+friend_list.append(input("Friend Name: "))
+friend_list.append(input("Friend Name: "))
+
+print(friend_list)  # Optional: To check the added name
+print(f"The winner is {random.choice(friend_list)}") # Optional:
+
+
+
